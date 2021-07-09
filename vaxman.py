@@ -34,13 +34,8 @@ class Wall(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.top = y
         self.rect.left = x
-
-# This creates all the walls in room 1
-def setupRoomOne(all_sprites_list):
-    # Make the walls. (x_pos, y_pos, width, height)
-    wall_list=pygame.sprite.RenderPlain()
-     
-    # This is a list of walls. Each is in the form [x, y, width, height]
+        
+         # This is a list of walls. Each is in the form [x, y, width, height]
     walls = [ [0,0,6,600],
               [0,0,600,6],
               [0,600,606,6],
@@ -80,6 +75,13 @@ def setupRoomOne(all_sprites_list):
               [120,540,126,6],
               [360,540,126,6]
             ]
+
+# This creates all the walls in room 1
+def setupRoomOne(all_sprites_list):
+    # Make the walls. (x_pos, y_pos, width, height)
+    wall_list=pygame.sprite.RenderPlain()
+     
+   #walls
      
     # Loop through the list. Create the wall, add it to the list
     for item in walls:
